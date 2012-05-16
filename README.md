@@ -1,6 +1,6 @@
 # Newrelic::Workling
 
-TODO: Write a gem description
+NewRelic instrument for workling.
 
 ## Installation
 
@@ -18,7 +18,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+add following configuration in newrelic.yml
+
+     background:
+       monitor_mode: true
+       app_name: 'Background Jobs'
+       transaction_tracer:
+         enabled: false
+
+see more info, check out [here]:[1]
 
 ## Contributing
 
@@ -27,3 +35,5 @@ TODO: Write usage instructions here
 3. Commit your changes (`git commit -am 'Added some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+[1]: https://newrelic.com/docs/ruby/monitoring-ruby-background-processes-and-daemons
