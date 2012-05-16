@@ -20,7 +20,7 @@ DependencyDetection.defer do
       (clazz.public_instance_methods - ::Workling::Base.public_instance_methods).each do |method|
         clazz.class_eval do
           NewRelic::Agent.logger.debug "added method tracer Workling/#{clazz.name}/#{method}"
-          clazz.send(:add_transaction_tracer, method, :category => :task)
+          clazz.send(:add_transaction_tracer, method, :category => "OtherTransaction/Workling")
         end
       end
     end
