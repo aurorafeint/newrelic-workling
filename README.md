@@ -22,7 +22,6 @@ add following configuration in newrelic.yml
 
      background:
        monitor_mode: true
-       app_name: 'Background Jobs'
        transaction_tracer:
          enabled: false
 
