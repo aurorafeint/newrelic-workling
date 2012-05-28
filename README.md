@@ -26,7 +26,7 @@ add following configuration in newrelic.yml
       transaction_tracer:
         enabled: false
 
-see more info, check out [here]:[1]
+see more info, check out [here][1]
 
 ## Contributing
 
