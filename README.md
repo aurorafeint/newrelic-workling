@@ -20,10 +20,11 @@ Or install it yourself as:
 
 add following configuration in newrelic.yml
 
-     background:
-       monitor_mode: true
-       transaction_tracer:
-         enabled: false
+    background:
+      monitor_mode: true
+      disable_serialization: true
+      transaction_tracer:
+        enabled: false
 
 see more info, check out [here]:[1]
 
